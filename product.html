@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BuyIt.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/goshop1.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-4-dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.2.0-web/css/all.css">
+		<link rel="stylesheet" href="css/jquery.wm-zoom-1.0.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+    <style>
+      
+    #b{
+      /* width: 300px; */
+    height: 500px;}
+   
+      </style>
+</head>
+<body>
+   
+<!-- Top  BAR -->
+<nav class="navbar navbar-expand-md navbar-light  ">
+    
+        <a class="navbar-brand " href="#">
+          <img src="/img/go_shop.png" width="100" height="40" class="d-inline-block align-top" alt="GoSHOP"> 
+        </a>        
+      
+<!-- FOR TOGGLE BUTTON -->
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="container-fluid">
+      <!-- <div class="row m-0 p-0"> -->
+          
+        <div class="col-lg-8 ">
+            <form class="form-inline text-center">
+                <div class="input-group collapse navbar-collapse " id="navbarSupportedContent">
+                  <button class="btn btn-outline-dark" type="button" id="button-addon2"><i class="fas fa-search"></i></button>  
+                  <input type="text" class="form-control search_input" type="search" placeholder="Search" aria-label="Search Field" aria-describedby="button-addon2">
+                    
+                </div> 
+            </form>
+        </div>
+       
+        <div class="col-lg-4 collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" data-toggle="modal" data-target="#LoginModal">Login</a>
+                          <a class="dropdown-item" href="#">Sign up</a>
+                          <!-- <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Logout</a> -->
+                        </div>
+                      </li>
+                    <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Customer Care</a>
+                            <a class="dropdown-item" href="#">Advertise</a>
+                          </div>
+                      </li>
+                  <li class="nav-item ml-sm-4">
+                      <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+                  </li>
+                </ul>
+      </div>
+    <!-- </div> -->
+    <!-- <a class="navbar-brand ml-sm-5" href="#">BUY iT</a> -->
+  </div>
+  </nav>
+  
+<!-- Category BAR -->
+  <div class="navbar1">
+    <a href="#">Home</a>
+    <a href="#">What's New</a>
+    <div class="dropdown1">
+      <button class="dropbtn">Clothing 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content1">
+        <div class="container-fluid">
+          <div class="row header">
+            <div class="col">
+              <h2>Clothing</h2>
+            </div>
+          </div>
+        
+        <div class="row last_row">
+          <div class="col-sm-4 links">
+            <h3>Mens Wear</h3>
+            <a href="#">Tshirt</a>
+            <a href="#">Jackets</a>
+            <a href="#">Trouser</a>
+          </div>
+          <div class="col-sm-4 links">
+            <h3>Women</h3>
+            <a href="#">Tshirt</a>
+            <a href="#">Jackets</a>
+            <a href="#">Trouser</a>
+          </div>
+          <div class="col-sm-4 links">
+              <img src="/img/cloth1.jpg" alt="img cloth" class="img-fluid">
+            </div>
+        </div>
+      </div> 
+      </div>
+    </div> 
+
+    <div class="dropdown1">
+        <button class="dropbtn">Electronics 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content1">
+          <div class="container-fluid">
+            <div class="row header">
+              <div class="col">
+                <h2>Electronics</h2>
+              </div>
+            </div>
+          
+          <div class="row last_row">
+            <div class="col-sm-4 links">
+              <h3>Mens Wear</h3>
+              <a href="#">Tshirt</a>
+              <a href="#">Jackets</a>
+              <a href="#">Trouser</a>
+            </div>
+            <div class="col-sm-4 links">
+              <h3>Women</h3>
+              <a href="#">Tshirt</a>
+              <a href="#">Jackets</a>
+              <a href="#">Trouser</a>
+            </div>
+            <div class="col-sm-4 links">
+                <img src="/img/elect.png" alt="img cloth" class="img-fluid">
+              </div>
+          </div>
+        </div> 
+        </div>
+      </div> 
+    
+    <div class="dropdown1">
+          <button class="dropbtn">Home & Furniture 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content1">
+            <div class="container-fluid">
+              <div class="row header">
+                <div class="col">
+                  <h2>Home & Furniture</h2>
+                </div>
+              </div>
+            
+            <div class="row last_row">
+              <div class="col-sm-4 links">
+                <h3>Mens Wear</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Trouser</a>
+              </div>
+              <div class="col-sm-4 links">
+                <h3>Women</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Trouser</a>
+              </div>
+              <div class="col-sm-4 links">
+                  <img src="/img/furniture.jpeg" alt="img cloth" class="img-fluid">
+                </div>
+            </div>
+          </div> 
+          </div>
+      </div> 
+    
+    <div class="dropdown1">
+          <button class="dropbtn">TV & Appliances 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content1">
+            <div class="container-fluid">
+              <div class="row header">
+                <div class="col">
+                  <h2>TV & Appliances</h2>
+                </div>
+              </div>
+            
+            <div class="row last_row">
+              <div class="col-sm-4 links">
+                <h3>Mens Wear</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Trouser</a>
+              </div>
+              <div class="col-sm-4 links">
+                <h3>Women</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Trouser</a>
+              </div>
+              <div class="col-sm-4 links">
+                  <img src="/img/tv.png" alt="img cloth" class="img-fluid">
+                </div>
+            </div>
+          </div> 
+          </div>
+      </div>   
+    
+    <div class="dropdown1">
+          <button class="dropbtn">Sports 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content1">
+            <div class="container-fluid">
+              <div class="row header">
+                <div class="col">
+                  <h2>Sports</h2>
+                </div>
+              </div>
+            
+            <div class="row last_row">
+              <div class="col-sm-4 links">
+                <h3>Mens Wear</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Trouser</a>
+              </div>
+              <div class="col-sm-4 links">
+                <h3>Women</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Trouser</a>
+              </div>
+              <div class="col-sm-4 links">
+                  <img src="/img/sports.png" alt="img cloth" class="img-fluid">
+                </div>
+            </div>
+          </div> 
+          </div>
+      </div>
+    <a href="#">Offer Zone</a>
+  </div>
+
+<!-- From Here Main Page -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- <div class="conatiner border">
+              <img src="img/products/note9_1.jpeg" class="img-fluid" alt="note 9 images" >
+              </div>   -->
+          <div class="row border">
+            <div class="col-md-12">
+              <div class="wm-zoom-container my-zoom-1">
+                  <div class="wm-zoom-box">
+                    <img id="b" src="img/products/note9_1.jpeg"  class="wm-zoom-default-img img-thumbnail" alt="alternative text" data-hight-src="img/products/note9_1.jpeg" data-loader-src="img/loader.gif">
+                    </div>
+                  </div>	
+                </div>
+            </div>
+          </div>
+          
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Samsung Galaxy Note 9 (Ocean Blue, 128 GB)</h2>
+                    <span class="badge badge-info">New</span>
+                    <span class="badge badge-success">OFFER</span>
+                </div>
+                <div class="col-md-12 mt-1">
+                    <h3>
+                      <span>&#x20B9;67900</span>
+                      <span class="mr-1 small_num">
+                        <del>&#x20B9;69000</del>
+                      </span>
+                    </h3>
+                </div>
+                <div class="col-md-12 ">
+                    <h4 class="header_content font-weight-bold">Highlights</h4>
+                    <ul class="internal_contents">
+                      <li>6 GB RAM | 128 GB ROM | Expandable Upto 512 GB</li>
+                      <li>6.4 inch Quad HD+ Display</li>
+                      <li>12MP + 12MP Dual Rear Camera | 8MP Front Camera</li>
+                      <li>4000 mAh Lithium-ion Battery</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 ">
+                  <h4 class="header_content font-weight-bold">Description</h4>
+                  <p class="internal_contents">The Samsung Galaxy Note 9 puts a new spin on the term ‘an interactive smartphone’. It simplifies the way you work on your hand-held device to the way you charge it, and everything else in between. Connecting to the Internet or uploading content on it is seamless, thanks to the phone’s fast network speed of up to 1.2 Gbps. Listening to music is enhanced by its Dolby Atmos audio system which creates an impressive three-dimensional sound. To sweeten the deal, the Samsung Galaxy Note 9 is credited with an IP68 rating, which means it is sealed from the inside out, making it resistant to water splashes or dust.</p>
+                </div>                    
+                <div class="col-md-12">
+                    <form class="d-flex justify-content-left">
+                        <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
+                        <button class="btn btn-primary ml-2 mt-0 mb-2 " type="submit">Add to cart
+                          <i class="fa fa-shopping-cart ml-1"></i>
+                        </button>
+                    </form>
+                </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Footer Zone -->
+  <div class="container-fluid footer pt-10">
+    <div class="row p-5">
+      <div class="col-4">
+        <p class="lead"> ABOUT</p>
+        <p><a href="#">Contact Us</a></p>
+        <p ><a href="#">About Us</a></p>
+        <p ><a href="#">Press</a></p>
+
+      </div>
+      <div class="col-4">
+        <p class="lead">HELP</p>
+        <p ><a href="#">Payment</a></p>
+        <p ><a href="#">Shipping</a></p>
+        <p ><a href="#">Returns & Cancellation</a></p>
+      </div>
+      <div class="col-4">
+        <p class="lead">Registered Office Address</p>
+        <p>  Buy IT
+            Ahmedabad,
+            Gujarat - 560034
+            India</p>
+      </div>
+      <div class="row ">
+        <div class="col text-center">
+        <p>
+          <a href="#"><i class="fab fa-instagram"></i></a> &nbsp;
+          <a href="#"><i class="fab fa-facebook-f"></i></a> &nbsp;
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </p>
+        <p>&copy;2018-19 Buy It</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Optional JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery.jqzoom-core-pack.js"></script>
+    <script src="js/jquery.jqzoom-core.js"></script> -->
+    <script type="text/javascript" src="js/jquery.wm-zoom-1.0.min.js"></script>
+		
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap-4-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.my-zoom-1').WMZoom();
+        $('.my-zoom-2').WMZoom({
+          config : {
+            inner : true
+          }
+        });
+      });
+    </script>
+  
+</body>
+</html>
