@@ -9,11 +9,31 @@
     <link rel="stylesheet" href="bootstrap-4-dist/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.2.0-web/css/all.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
 </head>
 <body>
    
+   <!-- Full Screen Video  -->
+   <div class="video-header wrap">
+    <div class="fullscreen-video-wrap">
+      <video src="/video/Sequence 01.mp4" autoplay loop></video>
+    </div>
+    <div class="header-overlay">
+      <div class="header-content">
+          <img src="/img/go_shop.png" width="200" height="80" class="d-inline-block align-top" alt="GoSHOP"> 
+        <p class="mt-0 small">Enrich your life.</p>
+        <p>Welcomes You<br></p>
+        <a class="btn btn-success my-btn mt-3" href="#startpage">Shop Now &gt;</a>
+      </div>
+    </div>
+  </div>  
+
+
 <!-- Top  BAR -->
+
 <nav class="navbar navbar-expand-md navbar-light  ">
     
         <a class="navbar-brand " href="#">
@@ -69,7 +89,7 @@
     <!-- <a class="navbar-brand ml-sm-5" href="#">BUY iT</a> -->
   </div>
   </nav>
-  
+
 <!-- Category BAR -->
   <div class="navbar1">
     <a href="#">Home</a>
@@ -232,7 +252,7 @@
                 <a href="#">Trouser</a>
               </div>
               <div class="col-sm-4 links">
-                  <img src="/img/sports.png" alt="img cloth" class="img-fluid">
+                  <img src="/img/sports-image.png" alt="img cloth" class="img-fluid">
                 </div>
             </div>
           </div> 
@@ -244,11 +264,13 @@
   </div>
 
   
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <button  onclick="topFunction()" id="toTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <!-- <div id="content">Scroll &darr;</div> -->
+  <!-- <a href="#" id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></a> -->
 
 
   <!-- LOgin MOdal -->
-  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog"           aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header ">
@@ -295,6 +317,8 @@
       </div>
     </div>
 
+
+
 <!-- carousel  -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -303,14 +327,15 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
+      <div class="carousel-item">
+          <img class="d-block w-100" src="img/new/Gift-Set-Overview.jpg" alt="Second slide">
+        </div>
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/laptop1.jpg" alt="First slide">
+      <img class="d-block w-100" src="img/new/PV_Header.jpg" alt="First slide">
     </div>
+    
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/laptop2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/watch1.jpg" alt="Third slide">
+      <img class="d-block w-100" src="img/new/hero-3-bg.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -323,13 +348,68 @@
   </a>
 </div>  
 
+<!-- Jumbotron with some extra imformation -->
+<div class="jumbotron jumbotron-fluid jumbo_color mb-0">
+  <div class="container">
+    <h1 class="display-5">Shoping with <img src="/img/go_shop.png" width="100" height="40" class="d-inline-block align-top" alt="GoSHOP"> </h1>
+    <p class="lead">Gives you Added Benifits Like:</p>
+    <hr class="my-2">
+    <ul>
+    <h5><i class="fas fa-check"></i> Free Cash on Delivery</h5>
+    <h5><i class="fas fa-check"></i> Free Shiping</h5>
+    <h5><i class="fas fa-check"></i> Only Genuine Products</h5>
+    <h5><i class="fas fa-check"></i> 100% Customer Satisfaction</h5>
+    <h5><i class="fas fa-check"></i> 24/7 Customer Support</h5>
+
+    
+    </ul>
+      <a class="btn btn-dark btn-lg" href="#startpage" role="button">Start Shoping</a>
+    </p>
+  </div>
+</div>
+
+<!-- Advertise Bannner -->
+<div class="container-fluid ad_cover">
+  <div class="container">
+  <img src="/img/ad22.jpg" alt="Advertise" class="img-thumbnail" >
+  <!-- <img src="/img/ad33.jpg" alt="Advertise" class="img-thumbnail" > -->
+</div>
+</div>
+
+<!-- Product showcase -->
+<div class="container-fluid ad_cover">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 p-5 ">
+      <h1>Crafted By hand in India.</h1><br>
+      <p class="lead">Our Products are made by expert craftsmen.Each Product is carefully handmade in our Workshop.</p>
+    </div>
+    <div class="col-sm-6">
+      <img src="/img/new/apple_cover1.png" class="img-fluid" alt="Customised Cover" height="500px" width="400px">
+    </div>
+  
+  </div>
+</div>
+</div>
+
+<!-- Special buttons over Image -->
+<div class="container-fluid ad_cover  pt-2">
+  <img src="/img/new/Summersal_custom.jpg" alt="sale_sale" class="img-fluid" >
+  <div class="overlay">
+      <button class="btn btn-dark img_btn">SHOP MEN's</button>&nbsp;
+      <button class="btn btn-dark img_btn">SHOP Women's</button>&nbsp;
+      <button class="btn btn-dark img_btn">SHOP Accesories</button>
+
+    </div>
+</div>
+
 <!-- Products started -->
 <div class="container-fluid back">
   <div class="container py-5">
     <div class="row">
       <div class="col-sm-4 ">
         <div class="card m-auto" >
-          <img class="card-img-top" src="img/laptop-1.jpg"  alt="Card image cap" class="img-thumbnail">
+          <img class="card-img-top" src="img/laptop-1.jpg"  alt="Card image cap" class="img-thumbnail" height="250px" width="250px">
           <div class="card-body">
             <h5 class="card-title">Hp Au-111-tx</h5>
             <p class="card-text ">Its integrated with most powerfull Cpu and Hardware.</p>
@@ -340,7 +420,7 @@
     
     <div class="col-sm-4">
       <div class="card m-auto" >
-          <img class="card-img-top" src="img/apple2.jpg"  class="img-thumbnail" alt="Card image cap">
+          <img class="card-img-top" src="img/apple2.jpg"  class="img-thumbnail" alt="Card image cap" height="250px" width="250px">
           <div class="card-body" >
             <h5 class="card-title">Apple Watch Series 3 GPS </h5>
             <p class="card-text ">42 mm Space Grey Aluminium Case with Grey Sport Band  (Grey Strap Regular)</p>
@@ -351,7 +431,7 @@
 
     <div class="col-sm-4">
         <div class="card m-auto" >
-            <img class="card-img-top" src="img/tvproduct.jpg"  class="img-thumbnail" alt="Card image cap">
+            <img class="card-img-top" src="img/tvproduct.jpg"  class="img-thumbnail" alt="Card image cap" height="250px" width="250px">
             <div class="card-body" >
               <h5 class="card-title">4K UHD TV </h5>
               <p class="card-text ">SONY BRAVIA 55 inches Black color</p>
@@ -362,6 +442,33 @@
   </div>
   </div>
 </div>
+
+<!-- <div class="container-fluid ad_cover">
+  <div class="container pt-1">
+    <h3>Shop By Category:</h3>
+    <div class="row">
+      <div class="col-3">
+    <div class="card text-white bg-primary mb-3 " >
+        <div class="card-header">Cloths</div>
+        <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-3">
+  <div class="card text-white bg-success mb-3 " >
+      <div class="card-header">Garments</div>
+      <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+</div> -->
 
 <!-- Footer Section -->
   <div class="container-fluid footer pt-10">
@@ -381,7 +488,7 @@
       </div>
       <div class="col-4">
         <p class="lead">Registered Office Address</p>
-        <p>  Buy IT
+        <p > GoSHOP
             Ahmedabad,
             Gujarat - 560034
             India</p>
@@ -393,7 +500,7 @@
           <a href="#"><i class="fab fa-facebook-f"></i></a> &nbsp;
           <a href="#"><i class="fab fa-twitter"></i></a>
         </p>
-        <p>&copy;2018-19 Buy It</p>
+        <p>&copy;2018-19 GOSHOP</p>
         </div>
       </div>
     </div>

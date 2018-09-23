@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Comic Carnival Registration</title>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
+  <link rel="stylesheet" type="text/css" href="/bootstrap-4-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  
+	<script>
+	  $(document).ready(function(){
+       $(".bg").interactive_bg();
+       $("#btns").interactive_bg({
+         strength: 10,
+         scale: 1.15,
+         contain: false,
+         wrapContent: true
+       });
+		});
+		
+		$(window).resize(function() {
+		  $(".wrapper > .ibg-bg").css({
+		    width: $(window).outerWidth(),
+		    height: $(window).outerHeight()
+		  })
+		})
+		
+</script>
+</head>
+<body>
+  <div class="wrapper bg" data-ibg-bg="img/fff.jpg">
+      <div class="limiter">
+          <div class="container-login100" >
+            <div class="wrap-login100">
+              <form class="login100-form validate-form">
+                
+      
+                <span class="login100-form-title pb-2 pt-2">
+                  GOSHOP
+                </span>
+      
+                <div class="wrap-input100 validate-input" data-validate = "Enter username">
+                  <input class="input100" type="text" name="name" placeholder="Name">
+                  <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+      
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                  <input class="input100" type="password" name="pass" placeholder="Password">
+                  <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                </div>
+      
+                <div class="wrap-input100 validate-input" data-validate="Enter contact Number">
+                    <input class="input100" type="tel" name="num" placeholder="Enter Whatsapp Number">
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                  </div>
+
+                  <div class="wrap-input100 validate-input" data-validate="Select Language">
+                      <select name="language" id="lang">
+                        <option value="" >Select Language</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="English">English</option>
+                      </select>
+                      <!-- <span class="focus-input100" data-placeholder="&#xf191;"></span> -->
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Select Genre">
+                        <select name="language" id="lang">
+                          <option value="" >Select Genre</option>
+                          <option value="Hindi">Indian Mythology</option>
+                          <option value="English">Fiction</option>
+                        </select>
+                        <!-- <span class="focus-input100" data-placeholder="&#xf191;"></span> -->
+                      </div>
+      
+                <div class="container-login100-form-btn">
+                  <button class="login100-form-btn">
+                    sign up
+                  </button>
+                </div>
+      
+                
+              </form>
+            </div>
+          </div>
+        </div>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="/bootstrap-4-dist/js/bootstrap.min.js"></script>
+        <!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
+
+</body>
+</html>
